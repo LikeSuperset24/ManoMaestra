@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const puerto = 80;
 
-const TemasController = require('./controllers/TemasController');
 const TipoUsuarioController = require('./controllers/TipoUsuarioController'); 
 const UsuarioController = require('./controllers/UsuarioController');
 const TrabajosController = require('./controllers/TrabajosController');
@@ -15,12 +14,6 @@ app.get('/', function (req, res) {
     res.setHeader('Content-Type', 'text/plain');
     res.send('¡Bienvenido a Mano Maestra - Por Juan Pablo Seja Reyes!');
 });
-
-app.get('/temas', TemasController.indexGet);
-app.get('/temas/:id([0-9]+)', TemasController.itemGet);
-app.post('/temas', TemasController.indexPost);
-app.put('/temas/:id([0-9]+)', TemasController.itemPut);
-app.patch('/temas/:id([0-9]+)', TemasController.itemPatch);
 
 app.get('/tipoUsuario', TipoUsuarioController.indexGet);
 app.get('/tipoUsuario/:id([0-9]+)', TipoUsuarioController.itemGet);
