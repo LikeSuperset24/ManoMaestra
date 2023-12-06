@@ -7,9 +7,9 @@ async function connectMysql() {
         client: 'mysql2',
         connection: {
             host: 'mysql', // docker-compose service
-            user: 'user_biblioteca',
+            user: 'user_manomaestra',
             password: mysqlPassword,
-            database: 'biblioteca'
+            database: 'manomaestra'
         }
     });
     return db;
