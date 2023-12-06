@@ -4,6 +4,7 @@ const puerto = 80;
 
 const TemasController = require('./controllers/TemasController');
 const TipoUsuarioController = require('./controllers/TipoUsuarioController'); 
+const UsuarioController = require('./controllers/UsuarioController');
 
 app.use(express.json());
 
@@ -21,6 +22,12 @@ app.patch('/temas/:id([0-9]+)', TemasController.itemPatch);
 
 app.get('/tipoUsuario', TipoUsuarioController.indexGet);
 app.get('/tipoUsuario/:id([0-9]+)', TipoUsuarioController.itemGet);
+
+app.get('/usuario', UsuarioController.indexGet);
+app.get('/usuario/:id([0-9]+)', UsuarioController.itemGet);
+app.post('/usuario', UsuarioController.indexPost);
+app.put('/usuario/:id([0-9]+)', UsuarioController.itemPut);
+app.patch('/usuario/:id([0-9]+)', UsuarioController.itemPatch);
 
 app.listen(puerto, function() {
     console.log("Servidor en espera http://localhost");
