@@ -6,13 +6,14 @@ const TemasController = require('./controllers/TemasController');
 const TipoUsuarioController = require('./controllers/TipoUsuarioController'); 
 const UsuarioController = require('./controllers/UsuarioController');
 const TrabajosController = require('./controllers/TrabajosController');
+const ReseñasController = require('./controllers/ReseñasController');
 
 app.use(express.json());
 
 app.get('/', function (req, res) {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.send('¡Prueba!');
+    res.send('¡Bienvenido a Mano Maestra - Por Juan Pablo Seja Reyes!');
 });
 
 app.get('/temas', TemasController.indexGet);
@@ -35,6 +36,12 @@ app.get('/trabajos/:id([0-9]+)', TrabajosController.itemGet);
 app.post('/trabajos', TrabajosController.indexPost);
 app.put('/trabajos/:id([0-9]+)', TrabajosController.itemPut);
 app.patch('/trabajos/:id([0-9]+)', TrabajosController.itemPatch);
+
+app.get('/resenas', ReseñasController.indexGet);
+app.get('/resenas/:id([0-9]+)', ReseñasController.itemGet);
+app.post('/resenas', ReseñasController.indexPost);
+app.put('/resenas/:id([0-9]+)', ReseñasController.itemPut);
+app.patch('/resenas/:id([0-9]+)', ReseñasController.itemPatch);
 
 app.listen(puerto, function() {
     console.log("Servidor en espera http://localhost");
