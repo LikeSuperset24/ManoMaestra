@@ -6,6 +6,7 @@ const TipoUsuarioController = require('./controllers/TipoUsuarioController');
 const UsuarioController = require('./controllers/UsuarioController');
 const TrabajosController = require('./controllers/TrabajosController');
 const ReseñasController = require('./controllers/ReseñasController');
+const IdeaProyectoController = require('./controllers/IdeaProyectoController');
 
 app.use(express.json());
 
@@ -35,6 +36,12 @@ app.get('/resenas/:id([0-9]+)', ReseñasController.itemGet);
 app.post('/resenas', ReseñasController.indexPost);
 app.put('/resenas/:id([0-9]+)', ReseñasController.itemPut);
 app.patch('/resenas/:id([0-9]+)', ReseñasController.itemPatch);
+
+app.get('/ideaProyecto', IdeaProyectoController.indexGet);
+app.get('/ideaProyecto/:id([0-9]+)', IdeaProyectoController.itemGet);
+app.post('/ideaProyecto', IdeaProyectoController.indexPost);
+app.put('/ideaProyecto/:id([0-9]+)', IdeaProyectoController.itemPut);
+app.patch('/ideaProyecto/:id([0-9]+)', IdeaProyectoController.itemPatch);
 
 app.listen(puerto, function() {
     console.log("Servidor en espera http://localhost");
