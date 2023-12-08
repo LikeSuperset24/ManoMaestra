@@ -1,7 +1,6 @@
 # API RESTful con Node.js
 
-Proyecto de demostración para clases de desarrollo de APIs utilizando Node.js,
-con implementación en contenedores de Docker.
+Proyecto de la especialidad llamado "Mano Maestra" con desarrollo de APIs utilizando Node.js, además de implementación en contenedores de Docker.
 
 ## Tabla de contenido
 
