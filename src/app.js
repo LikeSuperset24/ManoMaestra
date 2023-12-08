@@ -16,8 +16,8 @@ app.get('/', function (req, res) {
     res.send('¡Bienvenido a Mano Maestra - Por Juan Pablo Seja Reyes!');
 });
 
-app.get('/tipoUsuario', TipoUsuarioController.indexGet);
-app.get('/tipoUsuario/:id([0-9]+)', TipoUsuarioController.itemGet);
+app.get('/tipo-usuarios', TipoUsuarioController.indexGet);
+app.get('/tipo-usuarios/:id([0-9]+)', TipoUsuarioController.itemGet);
 
 app.get('/usuario', UsuarioController.indexGet);
 app.get('/usuario/:id([0-9]+)', UsuarioController.itemGet);
