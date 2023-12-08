@@ -37,11 +37,11 @@ app.post('/resenas', ReseñasController.indexPost);
 app.put('/resenas/:id([0-9]+)', ReseñasController.itemPut);
 app.patch('/resenas/:id([0-9]+)', ReseñasController.itemPatch);
 
-app.get('/ideaProyecto', IdeaProyectoController.indexGet);
-app.get('/ideaProyecto/:id([0-9]+)', IdeaProyectoController.itemGet);
-app.post('/ideaProyecto', IdeaProyectoController.indexPost);
-app.put('/ideaProyecto/:id([0-9]+)', IdeaProyectoController.itemPut);
-app.patch('/ideaProyecto/:id([0-9]+)', IdeaProyectoController.itemPatch);
+app.get('/ideas-proyectos', IdeaProyectoController.indexGet);
+app.get('/ideas-proyectos/:id([0-9]+)', IdeaProyectoController.itemGet);
+app.post('/ideas-proyectos', IdeaProyectoController.indexPost);
+app.put('/ideas-proyectos/:id([0-9]+)', IdeaProyectoController.itemPut);
+app.patch('/ideas-proyectos/:id([0-9]+)', IdeaProyectoController.itemPatch);
 
 app.listen(puerto, function() {
     console.log("Servidor en espera http://localhost");
