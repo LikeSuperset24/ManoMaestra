@@ -19,11 +19,11 @@ app.get('/', function (req, res) {
 app.get('/tipo-usuarios', TipoUsuarioController.indexGet);
 app.get('/tipo-usuarios/:id([0-9]+)', TipoUsuarioController.itemGet);
 
-app.get('/usuario', UsuarioController.indexGet);
-app.get('/usuario/:id([0-9]+)', UsuarioController.itemGet);
-app.post('/usuario', UsuarioController.indexPost);
-app.put('/usuario/:id([0-9]+)', UsuarioController.itemPut);
-app.patch('/usuario/:id([0-9]+)', UsuarioController.itemPatch);
+app.get('/usuarios', UsuarioController.indexGet);
+app.get('/usuarios/:id([0-9]+)', UsuarioController.itemGet);
+app.post('/usuarios', UsuarioController.indexPost);
+app.put('/usuarios/:id([0-9]+)', UsuarioController.itemPut);
+app.patch('/usuarios/:id([0-9]+)', UsuarioController.itemPatch);
 
 app.get('/trabajos', TrabajosController.indexGet);
 app.get('/trabajos/:id([0-9]+)', TrabajosController.itemGet);
