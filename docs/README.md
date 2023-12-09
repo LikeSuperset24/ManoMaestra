@@ -4,7 +4,7 @@ Bienvenido a la documentación de la API. A continuación, se presenta una lista
 ## Descripción General de Endpoints
 | Recurso                    | Descripción |
 | -------------------------- | ----------- |
-| [`GET /tipo-usuarios`](.\endpoints\get-tipo-usuarios.md)  | Recupera la lista de todos los tipos de usuarios disponibles.  |
+| [`GET /tipo-usuarios`](./endpoints/get-tipo-usuarios.md)  | Recupera la lista de todos los tipos de usuarios disponibles.  |
 | [`GET /tipo-usuarios/{id}`](.\endpoints\get-tipo-usuarios-id.md)  | Obtiene la información detallada sobre un tipo de usuarios especifico. |
 | [`GET /usuarios`](.\endpoints\get-usuarios.md)  | Recupera la lista de todos los usuarios disponibles.   |
 | [`GET /usuarios/{id}`](.\endpoints\get-usuarios-id.md)  | Obtiene la información detallada sobre un usuario especifico.  |
